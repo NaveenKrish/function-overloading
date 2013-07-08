@@ -1,0 +1,26 @@
+class FunOver
+{
+ int a,b;
+ float c,d;
+ double e,f;
+ public void multiply(int a,int b)
+ {
+  System.out.println("Result:" + a*b);
+ }
+ public void multiply(float a,float b)
+ {
+  System.out.println("Result:" + a*b);
+ }
+ public void multiply(double a,double b)
+ {
+  System.out.println("Result:" + a*b);
+ }
+
+public static void main(String args[])
+{
+FunOver fo=new FunOver();
+fo.multiply(Integer.parseInt(args[0]),Integer.parseInt(args[1]));
+fo.multiply(Float.parseFloat(args[2]),Float.parseFloat(args[3]));
+fo.multiply(Double.parseDouble(args[4]),Double.parseDouble(args[5]));
+}
+}
